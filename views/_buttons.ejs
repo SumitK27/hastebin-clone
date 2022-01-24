@@ -1,0 +1,12 @@
+<div class="buttons-wrapper">
+    <a href="/" class="logo"></a>
+    <div class="buttons">
+        <a href="/new" class="btn"><i class="far fa-file-plus"></i></a>
+        
+        <button class="btn <%= locals.canSave ? "" : "disabled" %>" type="submit"><i class="far fa-save"></i></button> 
+        
+        <a class="btn <%= locals.id != null ? "" : "disabled" %>" href="/<%= locals.id %>/duplicate"><i class="fal fa-copy"></i></a> 
+
+        <a href="" id="share" class="btn <%= locals.share ? "" : "disabled" %>"><i class="fas fa-share"></i></a>
+    </div>
+</div>
